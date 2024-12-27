@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lista de compras</title>
+    <link rel="stylesheet" href="./assets/css/global.css">
+    <link rel="shortcut icon" href="./assets/img/bag-svgrepo-com.svg" type="image/x-icon">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Krona+One&family=Numans&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <main>
+        <div class="continer-principal">
+            <img src="./assets/img/sacola.png" alt="Sacola de compras" class="imgemPrincipal">
+            <form action="" class="containr-button">
+                <input class="input-adicionar-item" id="input-adicionar-item" type="text"
+                    placeholder="Digite o item  que deseja adicionar" />
+                <button class="botao-adicionar" id="botao-adicionar-item">Adicionar item</button>
+            </form>
+        </div>
+
+
+        <div>
+            <h2 >Lista de compras</h2>
+            <hr />
+            <ul id="lista-de-compras">
+                <p id="mensagem-lista-vazia" style="display: block;">A sua lista está vazia</p>
+                <!-- <li>
+                    <div class="container-lista-item">
+                        <div class="containerCheck">
+                            <div class="checkbox-container">
+                                <label for="checkbox-1" >
+                                    <input type="checkbox" class="checkbox-input" id="checkbox-1" />
+                                    <div class="checkbox-customizado checked"> </div>
+                                </label>
+                            </div>
+                            <p>Ração de gato</p>
+                        </div>
+
+                        <div class="botoes">
+                            <button class="botao-acao item-lista-button-delete"><img class="botoesEditar"
+                                    src="/assets/img/trash-bin-minimalistic-2-svgrepo-com.svg" alt="Deletar"></button>
+                            <button class="botao-acao item-lista-button-editar"><img class="botoesEditar"
+                                    src="/assets/img/pen-svgrepo-com (1).svg" alt="Editar"></button>
+                        </div>
+                    </div>
+                    <p class="texto-data">Segunda feira (32/32) as 20:00</p> -->
+                </li>
+            </ul>
+            <h2>Comparado</h2>
+            <hr/>
+            <ul id="lista-comprados">
+            </ul>
+        </div>
+
+    </main>
+    <script src="./scripts/listaCompras.js"></script>
+</body>
+
+</html>

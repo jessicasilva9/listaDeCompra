@@ -1,0 +1,116 @@
+main {
+    display: grid;
+    place-items: center;
+    margin-top: 3rem;
+    background-color: var(--neutro);
+    padding: 3rem;
+}
+
+.imgemPrincipal {
+    width: 15rem;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    align-items: center;
+}
+
+.input-adicionar-item {
+    height: 2rem;
+    width: 20rem;
+    border-radius: 10px;
+    border: 1px solid var(--preto);
+    display: block;
+}
+
+.input-adicionar-item::placeholder {
+    font-family: var(--font-secundaria);
+    line-height: 18px;
+    font-size: 16px;
+}
+.checkbox-input{
+    display: none;
+}
+
+.checkbox-customizado {
+    width: 20px;
+    height: 20px;
+    background-color: var(--neutro);
+    border: 1px solid var(--preto);
+    cursor: pointer;
+    border-radius: 4px;
+    margin-right: 8px;
+}
+.checked {
+    background-color: #131730;
+    position: relative;
+}
+
+.checked::after {
+    content: "";
+    position: absolute;
+    left: 30%;
+    top: -10%;
+    width: 5px;
+    height: 14px;
+    border-top: 2px solid var(--neutro);
+    border-left: 2px solid var(--neutro);
+    transform: rotate(-140deg);
+}
+
+.botao-adicionar {
+    width: 15rem;
+    height: 2rem;
+    border-radius: 10px;
+    background-color: var(--cor-primaria);
+    color: var(--neutro);
+    font-family: var(--font-secundaria);
+    border: 1px solid var(--cor-primaria);
+    cursor: pointer;
+    /* font-weight: bold; */
+    font-size: 16px;
+
+
+}
+
+.botao-adicionar:hover {
+    border: 2px solid var(--cor-terciaria);
+}
+
+h2 {
+    font-size: 20px;
+    font-family: var(--font-primaria);
+    margin-top: 2rem;
+}
+
+hr {
+    border: none;
+    border-bottom: 3px dotted var(--cor-primaria);
+    margin-top: 10px;
+}
+
+.container-lista-item {
+    display: flex;
+    gap: 4rem;
+}
+
+.containerCheck {
+    display: flex;
+    text-align: center;
+    justify-items: center;
+
+}
+
+p {
+    font-family: var(--font-secundaria);
+}
+.item-lista-texto{
+    font-size: 12px;
+}
+.botao-acao{
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+}
