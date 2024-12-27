@@ -17,7 +17,7 @@
     <main>
         <div class="continer-principal">
             <img src="./assets/img/sacola.png" alt="Sacola de compras" class="imgemPrincipal">
-            <form action="" class="containr-button">
+            <form action="">
                 <input class="input-adicionar-item" id="input-adicionar-item" type="text"
                     placeholder="Digite o item  que deseja adicionar" />
                 <button class="botao-adicionar" id="botao-adicionar-item">Adicionar item</button>
@@ -25,37 +25,20 @@
         </div>
 
 
-        <div>
-            <h2 >Lista de compras</h2>
+        <div class="container-lista">
+            <h2>Lista de compras</h2>
             <hr />
-            <ul id="lista-de-compras">
+            <ul id="lista-de-compras" class="lista-de-compras">
                 <p id="mensagem-lista-vazia" style="display: block;">A sua lista está vazia</p>
-                <!-- <li>
-                    <div class="container-lista-item">
-                        <div class="containerCheck">
-                            <div class="checkbox-container">
-                                <label for="checkbox-1" >
-                                    <input type="checkbox" class="checkbox-input" id="checkbox-1" />
-                                    <div class="checkbox-customizado checked"> </div>
-                                </label>
-                            </div>
-                            <p>Ração de gato</p>
-                        </div>
 
-                        <div class="botoes">
-                            <button class="botao-acao item-lista-button-delete"><img class="botoesEditar"
-                                    src="/assets/img/trash-bin-minimalistic-2-svgrepo-com.svg" alt="Deletar"></button>
-                            <button class="botao-acao item-lista-button-editar"><img class="botoesEditar"
-                                    src="/assets/img/pen-svgrepo-com (1).svg" alt="Editar"></button>
-                        </div>
-                    </div>
-                    <p class="texto-data">Segunda feira (32/32) as 20:00</p> -->
-                </li>
             </ul>
-            <h2>Comparado</h2>
-            <hr/>
-            <ul id="lista-comprados">
-            </ul>
+
+            <div id="container-lista-comprados">
+                <h2>Comparado</h2>
+                <hr />
+                <ul id="lista-comprados">
+                </ul>
+            </div>
         </div>
 
     </main>

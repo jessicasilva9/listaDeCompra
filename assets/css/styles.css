@@ -3,23 +3,28 @@ main {
     place-items: center;
     margin-top: 3rem;
     background-color: var(--neutro);
-    padding: 3rem;
+    padding: 56px;
+    width: 440px;
 }
 
 .imgemPrincipal {
     width: 15rem;
 }
 
-form {
+
+.lista-item-container {
     display: flex;
-    flex-direction: column;
-    gap: 12px;
-    align-items: center;
+    justify-content: space-between;
+}
+
+.lista-item-container div {
+    display: flex;
+    gap: 8px;
 }
 
 .input-adicionar-item {
-    height: 2rem;
-    width: 20rem;
+    padding: 12px 16px;
+    width: 307px;
     border-radius: 10px;
     border: 1px solid var(--preto);
     display: block;
@@ -30,8 +35,16 @@ form {
     line-height: 18px;
     font-size: 16px;
 }
-.checkbox-input{
+
+.checkbox-input {
     display: none;
+}
+
+
+.containerCheck {
+    display: flex;
+    width: 35rem;
+    background-color: #131730;
 }
 
 .checkbox-customizado {
@@ -43,6 +56,7 @@ form {
     border-radius: 4px;
     margin-right: 8px;
 }
+
 .checked {
     background-color: #131730;
     position: relative;
@@ -71,12 +85,20 @@ form {
     cursor: pointer;
     /* font-weight: bold; */
     font-size: 16px;
+    line-height: 24px;
 
 
 }
 
 .botao-adicionar:hover {
     border: 2px solid var(--cor-terciaria);
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 8px;
 }
 
 h2 {
@@ -93,24 +115,30 @@ hr {
 
 .container-lista-item {
     display: flex;
+  
     gap: 4rem;
 }
 
-.containerCheck {
-    display: flex;
-    text-align: center;
-    justify-items: center;
-
-}
 
 p {
     font-family: var(--font-secundaria);
+    font-size: 16px;
 }
-.item-lista-texto{
+
+.item-lista-texto {
     font-size: 12px;
 }
-.botao-acao{
-    background-color: transparent;
-    border: none;
-    cursor: pointer;
+
+
+.texto-data {
+    font-size: 12px;
+    line-height: 20px;
+}
+.container-lista{
+    width: 100%;
+}
+
+button{
+   background-color: transparent;
+   border: none;
 }

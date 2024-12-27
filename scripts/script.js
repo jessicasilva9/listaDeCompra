@@ -11,6 +11,7 @@ function adicionarItem(evento) {
     const containerItemLista = document.createElement("div");
     containerItemLista.classList.add("lista-item-container");
     const containerNomeDoItem = document.createElement("div");
+    containerNomeDoItem.classList.add("containerCheck")
 
     const containerCheckbox = document.createElement("div");
     containerCheckbox.classList.add("checkbox-containe");
@@ -51,12 +52,13 @@ function adicionarItem(evento) {
     containerNomeDoItem.appendChild(nomeDoItem);
 
     const containerBotoes = document.createElement("div");
+    containerBotoes.classList.add("item-lista-button")
 
     const botaoRmover = document.createElement("button");
-    botaoRmover.classList.add("item-lista-button-delete");
+    botaoRmover.classList.add("item-lista-button");
 
     const botaoEditar = document.createElement("button");
-    botaoEditar.classList.add("item-lista-button-editar")
+    botaoEditar.classList.add("item-lista-button")
 
 
     //botao remover
